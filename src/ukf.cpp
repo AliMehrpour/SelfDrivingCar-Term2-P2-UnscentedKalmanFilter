@@ -382,7 +382,7 @@ void UKF::UpdateRadar(Data measurement) {
   int n_z = n_radar_z_;
 
   VectorXd z = VectorXd(n_z);
-  z << measurement.data_[0], measurement.data_[1], meas_package.data_[2];
+  z << measurement.data_[0], measurement.data_[1], measurement.data_[2];
 
   // predict measurement
   VectorXd z_pred;
